@@ -13,7 +13,7 @@ This simulator was initially designed to compare scoring systems. The `et_sq_sp_
 ![](results-et_sq_sp_compare.png)
 A few things to note about these plots:
 - Although this is a small sample, it is telling that early taper does better than status quo scoring on every metric, replicating the result in Barnes et al. 2020.
-- This model is probably not suitable to evaluate the speaker points scoring system; the SP results are perhaps better regarded as a theoretical minimum for each accuracy/order metric.
+- This model is probably not suitable for evaluating the speaker points scoring system; the SP results are perhaps better regarded as a theoretical minimum for each accuracy/order metric.
 - I measure the order accuracy metrics somewhat differently from Barnes et al. 2020 in that I do not exclude any parts of the tab when deriving them. In contrast, my understanding is that Barnes et al. exclude the bottom half of the tab, which reduces the time required to run simulations.
 - Some other potential differences include: a) my draw generation function may not be working as intended, b) I keep judge perception bias at a constant standard deviation for each round, whereas Barnes et al. allude to decreasing perception bias in later rounds.
 
