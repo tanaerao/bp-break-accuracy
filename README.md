@@ -1,9 +1,9 @@
 # Break Accuracy in British Parliamentary Debating
 
-This is my attempt to replicate the model employed in [Barnes et al. 2020](https://international-debate.com/2020/03/18/tapered-points/) using the methods and parameters described therein. Its intended use case is as a starting point for researchers interested in British Parliamentary scoring systems and proposed improvements to the status quo system. By releasing it open source, I hope to encourage continued discussion on this topic. This break accuracy simulator may also be of interest to tournament convenors and chief adjudicators interested in preserving the accuracy of a tournament's results while contending with logistical constraints.
+This is an open source replication of the model employed in [Barnes et al. 2020](https://international-debate.com/2020/03/18/tapered-points/). Its intended use case is as a starting point for researchers interested in British Parliamentary scoring systems and proposed improvements to the status quo system. By releasing it open source, I hope to encourage continued discussion on this topic. This break accuracy simulator may also be of interest to tournament convenors and chief adjudicators interested in preserving the accuracy of a tournament's results while contending with logistical constraints.
 
 ## How to use
-I recommend reading Barnes et al. 2020 if you haven't done so already; otherwise, the following won't make much sense.
+The following assumes some knowledge of how British Parliamentary debate tournaments operate, and of the analysis in Barnes et al. 2020.
 
 Simulating a tournament is split into three functions: generating draws (`simple_generate_draw`), generating team speaker scores (`run_round`), and scoring each round (`xx_score`). The functions operate independently of one another. For example, a new scoring system can be introduced by copying and modifying the `sq_score` function, without making any other changes. The `simulate_tournament` function combines these all together, taking a number of rounds, number of teams, and scoring system, and outputting team-by-team results for the tournament. These results are: team points, total speaker points, total demonstrated skill, and baseline skill (see Barnes et al. 2020). 
 
